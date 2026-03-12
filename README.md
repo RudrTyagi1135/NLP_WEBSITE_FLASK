@@ -1,4 +1,4 @@
-🚀 NLP App — Flask NLP Web Application
+**🚀 NLP App — Flask NLP Web Application**
 
 A Flask-based Natural Language Processing (NLP) web application that allows users to analyze text using multiple NLP capabilities such as:
 
@@ -10,14 +10,14 @@ Abuse Detection
 
 The application also includes a basic authentication system, allowing users to register and log in before accessing the NLP tools.
 
-📌 Overview
+**📌 Overview**
 
 This project demonstrates how web development and Natural Language Processing can be integrated into a single application.
 
 Users interact with a Flask-powered web interface where they can submit text and perform multiple NLP analyses using libraries such as NLTK and TextBlob.
 
-✨ Features
-🔐 User Authentication
+**✨ Features**
+_🔐 User Authentication_
 
 Register new users using name, email, and password
 
@@ -25,7 +25,7 @@ Login system for existing users
 
 User data stored in a JSON-based database
 
-🏷 Named Entity Recognition (NER)
+_🏷 Named Entity Recognition (NER)_
 
 Extracts noun phrases and named entities from user-provided text
 
@@ -39,7 +39,7 @@ Organizations
 
 Implemented using NLTK
 
-💬 Sentiment Analysis
+_💬 Sentiment Analysis_
 
 Evaluates sentiment polarity of the input text
 
@@ -47,13 +47,13 @@ Uses TextBlob for sentiment detection
 
 Note: This feature is currently a placeholder and will be fully implemented in a future update.
 
-⚠️ Abuse Detection
+_⚠️ Abuse Detection_
 
 Detects abusive or offensive language within user-provided text
 
 Note: This feature is planned and will be implemented in future updates.
 
-👤 User Profile Dashboard
+_👤 User Profile Dashboard_
 
 After logging in, users can:
 
@@ -63,7 +63,7 @@ Submit text for analysis
 
 View processed results directly within the web interface
 
-🧰 Technologies Used
+**🧰 Technologies Used**
 | **Layer**             | **Technology** |
 | --------------------- | -------------- |
 | **Backend**           | Flask          |
@@ -73,21 +73,26 @@ View processed results directly within the web interface
 | **Templating Engine** | Jinja2         |
 
 
-⚙ Installation
+**⚙ Installation**
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/your-username/nlp-app.git
 
 Navigate to the project directory:
+
 cd nlp-app
 
 2️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 3️⃣ Download Required NLTK Resources
+
 python -m nltk.downloader punkt averaged_perceptron_tagger maxent_ne_chunker words
 
 ▶️ Running the Application
+
 Start the Flask server:
 python app.py
 
