@@ -103,23 +103,30 @@ Open your browser and visit:
 
 http://127.0.0.1:5000/
 
-📂 Project Structure
+## 📂 Project Structure
 
-NLP-App/
+```
+nlp_web/
 │
-├── app.py                # Main Flask application
-├── api.py                # NLP logic (NER, Sentiment, Abuse detection)
-├── db.py                 # User authentication and data handling
-├── requirements.txt      # Python dependencies
+├── app.py
+├── api.py
+├── db.py
+├── users.json
+├── requirements.txt
 │
-├── templates/            # HTML templates
+├── templates/
 │   ├── login.html
 │   ├── register.html
 │   ├── profile.html
 │   ├── ner.html
 │   ├── sentiment.html
 │   └── abuse_detection.html
-
+│
+├── static/
+│
+├── .gitignore
+└── README.md
+```
 
 📊 Example Workflow
 
