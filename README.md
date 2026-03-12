@@ -119,8 +119,7 @@ NLP-App/
 │   ├── ner.html
 │   ├── sentiment.html
 │   └── abuse_detection.html
-│
-└── static/               # Optional static files (CSS, JS, images)
+
 
 📊 Example Workflow
 
