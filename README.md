@@ -93,10 +93,14 @@ python -m nltk.downloader punkt averaged_perceptron_tagger maxent_ne_chunker wor
 
 ▶️ Running the Application
 
+
 Start the Flask server:
+
 python app.py
 
+
 Open your browser and visit:
+
 http://127.0.0.1:5000/
 
 📂 Project Structure
