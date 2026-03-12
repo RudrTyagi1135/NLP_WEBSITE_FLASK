@@ -41,7 +41,6 @@ NLP_WEBSITE_FLASK/
 ├── app.py                 # Main Flask application
 ├── api.py                 # NLP processing logic
 ├── db.py                  # User authentication module
-├── users.json             # JSON user database
 ├── requirements.txt       # Python dependencies
 │
 ├── templates/             # HTML templates
@@ -52,10 +51,11 @@ NLP_WEBSITE_FLASK/
 │   ├── sentiment.html
 │   └── abuse_detection.html
 │
-├── static/                # Static files (CSS, JS)
-│
 ├── .gitignore
-└── README.md
+├── LICENSE
+├── README.md
+│
+└── .idea/                 # IDE configuration files
 ```
 
 ---
@@ -148,8 +148,8 @@ Potential future modules:
 ### Clone repository
 
 ```bash
-git clone https://github.com/your-username/nlp-app.git
-cd nlp-app
+git clone https://github.com/RudrTyagi1135/NLP_WEBSITE_FLASK.git
+cd NLP_WEBSITE_FLASK
 ```
 
 ### Install dependencies
