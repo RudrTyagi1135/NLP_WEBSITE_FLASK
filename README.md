@@ -1,121 +1,50 @@
-**🚀 NLP App — Flask NLP Web Application**
+# 🚀 NLP App — Flask NLP Web Application
 
-A Flask-based Natural Language Processing (NLP) web application that allows users to analyze text using multiple NLP capabilities such as:
+A **Flask-based Natural Language Processing (NLP) web application** that allows users to analyze text using multiple NLP capabilities such as **Named Entity Recognition (NER)**, **Sentiment Analysis**, and **Abuse Detection**.
 
-Named Entity Recognition (NER)
+The system provides a **simple web interface with authentication** where users can log in and perform multiple NLP analyses using Python NLP libraries.
 
-Sentiment Analysis
+This project demonstrates **backend web development**, **NLP integration**, and **modular Flask architecture**.
 
-Abuse Detection
+---
 
-The application also includes a basic authentication system, allowing users to register and log in before accessing the NLP tools.
+## 🚀 Features
 
-**📌 Overview**
+- 🔐 **User authentication system**
+- 🏷 **Named Entity Recognition (NER)**
+- 💬 **Sentiment analysis using TextBlob**
+- ⚠️ **Abuse detection module**
+- 📊 **Interactive web interface for NLP analysis**
+- ⚡ **Flask-based backend application**
+- 📦 **JSON-based user data storage**
 
-This project demonstrates how web development and Natural Language Processing can be integrated into a single application.
+---
 
-Users interact with a Flask-powered web interface where they can submit text and perform multiple NLP analyses using libraries such as NLTK and TextBlob.
+## 🧠 What This Project Demonstrates
 
-**✨ Features**
+This project highlights the following **backend and NLP engineering skills**:
 
-_🔐 User Authentication_
+- **Flask web application development**
+- **Natural Language Processing integration**
+- **Text analysis using TextBlob and NLTK**
+- **User authentication system implementation**
+- **Web-based NLP tool development**
+- **Separation of backend logic and templates**
 
-Register new users using name, email, and password
-
-Login system for existing users
-
-User data stored in a JSON-based database
-
-_🏷 Named Entity Recognition (NER)_
-
-Extracts noun phrases and named entities from user-provided text
-
-Identifies entities such as:
-
-People
-
-Locations
-
-Organizations
-
-Implemented using NLTK
-
-_💬 Sentiment Analysis_
-
-Evaluates sentiment polarity of the input text
-
-Uses TextBlob for sentiment detection
-
-Note: This feature is currently a placeholder and will be fully implemented in a future update.
-
-_⚠️ Abuse Detection_
-
-Detects abusive or offensive language within user-provided text
-
-Note: This feature is planned and will be implemented in future updates.
-
-_👤 User Profile Dashboard_
-
-After logging in, users can:
-
-Access available NLP tools
-
-Submit text for analysis
-
-View processed results directly within the web interface
-
-**🧰 Technologies Used**
-| **Layer**             | **Technology** |
-| --------------------- | -------------- |
-| **Backend**           | Flask          |
-| **NLP Libraries**     | TextBlob, NLTK |
-| **Data Storage**      | JSON           |
-| **Frontend**          | HTML, CSS      |
-| **Templating Engine** | Jinja2         |
-
-
-**⚙ Installation**
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/your-username/nlp-app.git
-
-Navigate to the project directory:
-
-cd nlp-app
-
-2️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-3️⃣ Download Required NLTK Resources
-
-python -m nltk.downloader punkt averaged_perceptron_tagger maxent_ne_chunker words
-
-▶️ Running the Application
-
-
-Start the Flask server:
-
-python app.py
-
-
-Open your browser and visit:
-
-http://127.0.0.1:5000/
+---
 
 ## 📂 Project Structure
 
 ```
-NLP_WEBSITE_FLASK
+NLP_WEBSITE_FLASK/
 │
-├── app.py
-├── api.py
-├── db.py
-├── users.json
-├── requirements.txt
+├── app.py                 # Main Flask application
+├── api.py                 # NLP processing logic
+├── db.py                  # User authentication module
+├── users.json             # JSON user database
+├── requirements.txt       # Python dependencies
 │
-├── templates/
+├── templates/             # HTML templates
 │   ├── login.html
 │   ├── register.html
 │   ├── profile.html
@@ -123,43 +52,193 @@ NLP_WEBSITE_FLASK
 │   ├── sentiment.html
 │   └── abuse_detection.html
 │
-├── static/
+├── static/                # Static files (CSS, JS)
 │
 ├── .gitignore
 └── README.md
 ```
 
-📊 Example Workflow
+---
 
-User registers or logs into the application
+## ⚙️ Architecture Overview
 
-User accesses the dashboard
+The application follows a **simple Flask MVC-style architecture**.
 
-User selects an NLP analysis tool
+```
+User Request
+     │
+     ▼
+Flask Server (app.py)
+     │
+     ▼
+API Layer
+(api.py)
+     │
+     ▼
+NLP Processing
+(TextBlob / NLTK)
+     │
+     ▼
+Response Rendered
+(HTML Templates)
+```
 
-Text is processed using NLP libraries
+### Design Principles
 
-Results are displayed within the web interface
+- **Separation of Concerns**
+- **Reusable NLP modules**
+- **Simple authentication architecture**
+- **Clean template-based UI rendering**
 
+---
 
-🤝 Contribution
+## 📊 NLP Functional Modules
 
-Contributions are welcome.
+The application includes multiple **NLP analysis modules**.
 
-To contribute:
+### Named Entity Recognition
 
-Fork the repository
+- Extracts **noun phrases and entities**
+- Identifies:
+  - *People*
+  - *Locations*
+  - *Organizations*
 
-Create a new branch
+Implemented using **NLTK**.
 
-Commit your changes
+---
 
-Submit a pull request
+### Sentiment Analysis
 
-You can also open an Issue if you find bugs or want to suggest improvements.
+Evaluates **sentiment polarity** of input text using **TextBlob**.
 
+Returns:
 
-📄 License
+- Positive sentiment
+- Negative sentiment
+- Neutral sentiment
 
-This project is licensed under the MIT License.
-See the LICENSE file for more details.
+---
+
+### Abuse Detection
+
+Detects **abusive or offensive language** within the provided text.
+
+*Note: This feature is currently under development and will be expanded in future updates.*
+
+---
+
+## ⚠️ Planned Future Features
+
+The system architecture allows additional NLP features to be added easily.
+
+Potential future modules:
+
+- Emotion detection
+- Text summarization
+- Topic modeling
+- Chatbot interface
+- Toxic comment detection
+- NLP API endpoints
+
+---
+
+## 🛠 Installation
+
+### Clone repository
+
+```bash
+git clone https://github.com/your-username/nlp-app.git
+cd nlp-app
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Download required NLTK resources
+
+```bash
+python -m nltk.downloader punkt averaged_perceptron_tagger maxent_ne_chunker words
+```
+
+---
+
+## ▶️ Running the Application
+
+Start the Flask server:
+
+```bash
+python app.py
+```
+
+Server will run at:
+
+```
+http://127.0.0.1:5000/
+```
+
+Open the URL in your browser to access the application.
+
+---
+
+## 🧪 Example Usage
+
+Example workflow:
+
+1. **User registers or logs into the application**
+2. User accesses the **profile dashboard**
+3. User selects an **NLP analysis tool**
+4. User submits text for analysis
+5. The system processes text using **NLP libraries**
+6. Results are displayed in the **web interface**
+
+---
+
+## 📈 Potential Improvements
+
+Future enhancements could include:
+
+- NLP API endpoints
+- Deep learning NLP models
+- Database integration (PostgreSQL / MongoDB)
+- User analytics dashboard
+- Docker containerization
+- Cloud deployment (AWS / Render / Railway)
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| Python | Programming language |
+| Flask | Web framework |
+| NLTK | Named entity recognition |
+| TextBlob | Sentiment analysis |
+| JSON | User data storage |
+| HTML/CSS | Frontend interface |
+| Jinja2 | Template rendering |
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helped build understanding of:
+
+- **Flask web application development**
+- **Natural Language Processing pipelines**
+- **User authentication systems**
+- **Python modular architecture**
+- **Web-based NLP systems**
+
+---
+
+## 👤 Author
+
+**Rudra**
+
+B.Tech Final Year Student  
+Aspiring **MLOps Engineer**
