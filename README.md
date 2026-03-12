@@ -106,7 +106,7 @@ http://127.0.0.1:5000/
 ## 📂 Project Structure
 
 ```
-nlp_web/
+NLP_WEBSITE_FLASK
 │
 ├── app.py
 ├── api.py
