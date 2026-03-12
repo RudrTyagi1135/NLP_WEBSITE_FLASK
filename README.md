@@ -17,6 +17,7 @@ This project demonstrates how web development and Natural Language Processing ca
 Users interact with a Flask-powered web interface where they can submit text and perform multiple NLP analyses using libraries such as NLTK and TextBlob.
 
 **✨ Features**
+
 _🔐 User Authentication_
 
 Register new users using name, email, and password
